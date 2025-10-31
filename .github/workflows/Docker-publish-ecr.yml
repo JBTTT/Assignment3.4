@@ -7,7 +7,7 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REGISTRY: 255945442255.dkr.ecr.us-east-1.amazonaws.com
-  ECR_REPOSITORY: jibin-assignment3-4
+  ECR_REPOSITORY: jibin-flask-prepo-assignment3-4
 
 jobs:
   build:
@@ -38,4 +38,4 @@ jobs:
 
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
-        
+
