@@ -4,15 +4,10 @@ on:
   push:
     branches: [ "main" ]
 
-#env:
-#  AWS_REGION: us-east-1
-#  ECR_REGISTRY: 255945442255.dkr.ecr.us-east-1.amazonaws.com
-#  ECR_REPOSITORY: jibin-flask-prepo-assignment3-4
-
 env:
-  AWS_REGION: ${{ secrets.AWS_REGION }}
-  ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
-  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+  AWS_REGION: us-east-1
+  ECR_REGISTRY: 255945442255.dkr.ecr.us-east-1.amazonaws.com
+  ECR_REPOSITORY: jibin-flask-prepo-assignment3-4
 
 jobs:
   build:
